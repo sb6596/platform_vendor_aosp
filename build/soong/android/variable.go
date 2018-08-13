@@ -1,5 +1,9 @@
 package android_aosp
 type Product_variables struct {
+	Needs_legacy_camera_hal1_dyn_native_handle struct {
+		Cppflags []string
+	}
+
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
@@ -55,6 +59,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Uses_non_treble_camera  *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
