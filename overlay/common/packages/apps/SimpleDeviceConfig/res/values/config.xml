@@ -64,5 +64,10 @@
 
         <!-- Select text on recents -->
         <item>device_personalization_services/Overview__enable_overview=true</item>
+
+        <!-- Machine learning back gesture (requires TensorFlow model) -->
+        <item>systemui/use_back_gesture_ml_model=true</item>
+        <item>systemui/back_gesture_ml_model_name=backgesture</item>
+        <item>systemui/back_gesture_ml_model_threshold=0.9</item>
     </string-array>
 </resources>
