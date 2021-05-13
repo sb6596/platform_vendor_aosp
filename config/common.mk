@@ -192,6 +192,10 @@ PRODUCT_PACKAGES += \
 # ThemeOverlays
 include packages/overlays/Themes/themes.mk
 
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    DU-Themes
+
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 
